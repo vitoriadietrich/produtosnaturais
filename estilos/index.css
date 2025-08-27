@@ -1,0 +1,368 @@
+/* Remove a formatação padrão do navegador */
+* {
+    margin: 0; /*margin zero*/
+    padding: 0; /*espaçamento zero*/
+  }
+  
+  .fonte-zero{
+    font-size: 0px; /*tamanho da fonte*/
+    padding: 0px; /*espaçamento*/
+    opacity: 0; /*opacidade zero*/
+    float: none; /*sem float*/
+    border: 0px; /*borda zero*/
+    display: none; /*sem display*/
+  }
+
+  .descricao-container {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos de forma que fiquem em ambos os lados */
+    align-items: center; /* Alinha verticalmente os elementos no centro */
+  }
+  
+  .descricao-container img {
+    width: 20%; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-left: 10%; /* Espaçamento entre a imagem e o texto */
+    margin-top: 13%;
+    margin-bottom: 20%;
+  }
+  
+  .texto {
+    margin-top: -50%;
+    margin-right: 14%;
+    margin-left: -6%;
+  }
+  
+  .paragrafo {
+    font-size: 20px;
+    margin-left: 37%;
+    width: 50%;
+    margin-top: -46%;
+    justify-content: center;
+    letter-spacing: -1px; /* Reduz o espaçamento entre as letras */
+  }
+
+  .saiba-mais-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 37%;
+    margin-top: 1%;
+    text-decoration: none;
+    color: #fff;
+    background-color: #964B00; /* Cor de fundo do botão */
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .saiba-mais-btn:hover {
+    background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+    color: #964B00;
+    transform: translateX(5px); /* Move o botão ligeiramente para a direita ao passar o mouse */
+  }
+  
+  .saiba-mais-btn i {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  /* Container que envolve todas as imagens */
+.blocos {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Container que agrupa as linhas */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Defina uma largura máxima, se necessário */
+  padding: 0 20px;
+}
+
+/* As linhas de imagens */
+.linha {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px; /* Espaçamento entre as linhas */
+}
+
+/* Estilo de cada bloco (imagem + nome) */
+.bloco {
+  flex: 1;
+  margin-right: 20px; /* Espaçamento entre as imagens */
+  text-align: center; /* Centraliza o nome abaixo das imagens */
+}
+
+.bloco img {
+  width: 100%; /* As imagens ocupam toda a largura disponível do bloco */
+  max-width: 300px; /* Ajuste o tamanho máximo das imagens */
+  height: auto;
+  border-radius: 8px; /* Deixe as bordas arredondadas nas imagens */
+}
+
+/* Ajuste o texto */
+.nome {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Evita que o último bloco da linha tenha margem extra */
+.linha .bloco:last-child {
+  margin-right: 0;
+}
+
+.veja-mais-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 69%;
+  margin-top: -1%;
+  text-decoration: none;
+  color: #fff;
+  background-color: #964B00; /* Cor de fundo do botão */
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.veja-mais-btn:hover {
+  background-color: #ffffff; /* Cor de fundo ao passar o mouse */
+  color: #964B00;
+  transform: translateX(5px); /* Move o botão ligeiramente para a direita ao passar o mouse */
+}
+
+.veja-mais-btn i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/* Estilos do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  animation: fadeIn 0.5s;
+}
+
+.modal-content {  
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 8px;
+}
+
+#caption {
+  margin: 20px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  max-width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  background-color: #DC6700; /* Altere para a cor desejada */
+}
+
+/* Fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Começo da responsividade da página index */
+
+@media screen and (max-width: 320px) {
+  .carousel-item img {
+    width: 100% !important;
+    height: 40% !important;
+}
+
+.navbar-brand {
+    margin-top: -15%;
+    margin-left: -7%;
+}
+
+.navbar-toggler {
+    margin-top: -6% !important;
+}
+
+.nav-link {
+    color: #000000 !important; /* Cor do link */
+    font-size: 14px !important; /* Tamanho da fonte */
+    margin-top: 6%; /* Margem superior */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilo para os itens da navegação */
+.nav-item {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo para a barra de pesquisa */
+.input-group {
+    margin-top: 16%; /* Ajuste da margem superior */
+    margin-left: -120% !important; /* Centraliza horizontalmente */
+    width: 190% !important; /* Ajusta a largura da barra de pesquisa */
+}
+
+/* Estilo para os links dentro de .nav-item */
+.nav-item a {
+    font-size: 20px; /* Tamanho da fonte */
+    color: black !important; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilo para o número do WhatsApp */
+.whatsapp-link {
+    color: #000000 !important;
+    margin-left: 37%;
+    font-size: 14px;
+    margin-top: -11% !important;
+    padding: 1px !important;
+}
+
+.fab.fa-whatsapp {
+    margin-left: -310% !important;
+    font-size: 20px; /* Tamanho do ícone */
+    color: #25D366;  /* Cor padrão do ícone do WhatsApp */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+}
+
+.navbar-collapse {
+    background-color: rgb(245, 243, 233);
+    border-radius: 30px;
+}
+
+footer .col-md-3 {
+    width: 100%; /* Garante 100% da largura em dispositivos menores */
+    margin-bottom: 20px;
+}
+ .list-unstyled {
+    margin-left: -23%;
+}
+
+.links-uteis-title {
+    margin-left: 2% !important;
+}
+
+footer h5 {
+    font-size: 16px; /* Ajuste de tamanho de título */
+    margin-bottom: 15px; /* Ajuste de espaçamento */
+}
+
+footer .col-md-3 p,
+footer .col-md-3 a {
+    font-size: 14px; /* Tamanho de fonte para texto e links em telas menores */
+}
+
+footer .fab {
+    font-size: 20px; /* Reduz o tamanho do ícone do WhatsApp */
+}
+
+footer .col-md-3 img {
+    width: 45px; /* Ajuste o tamanho das imagens */
+}
+footer .text-center p {
+    font-size: 14px;
+}
+.carousel-item {
+  height: 530px;
+}
+.texto h1 {
+  font-size: 17px;
+  margin-top: -210% !important;
+  /* margin-left: -83%; */
+  margin-left: -20% !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.042);
+}
+.texto p {
+  /* margin-left: -84% !important; */
+  margin-left: -20% !important;
+  font-size: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.042);
+}
+.descricao-container img {
+  object-fit: cover;
+  min-width: 40% !important;
+  margin-left: -3%;
+}
+.text .paragrafo {
+  font-size: 8px;
+  font-family: 'Lucida Sans';
+  letter-spacing: 1px;
+  border-radius: 10px;
+  margin-top: -150% !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 6px 6px;
+  margin-left: 40%;
+}
+.saiba-mais-btn {
+  font-size: 12px;
+  margin-left: 40%;
+}
+.alert {
+  font-size: 20px !important;
+}
+.linha .nome {
+  font-size: 10.6px !important;
+  white-space: nowrap;
+  justify-content: center;
+  display: flex;
+}
+.veja-mais-btn {
+  font-size: 12px;
+  width: 52%;
+  margin-left: 46%;
+  white-space: nowrap;
+}
+#img3 + .nome {
+  margin-top: 10% !important;
+}
+}
+
+/* Fim da responsividade da página index */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

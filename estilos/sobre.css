@@ -1,0 +1,198 @@
+.textao {
+    background-color: #FEF9F3;
+    width: 60%;
+    /* Ajustado para garantir que o bloco tenha uma largura mais flexível */
+    max-width: 800px;
+    /* Define uma largura máxima para evitar que o bloco fique muito largo em telas grandes */
+    border-radius: 40px;
+    margin: 20px auto;
+    /* Centraliza o bloco horizontalmente e adiciona um pequeno espaço superior */
+    position: relative;
+    padding: 60px;
+    /* Aumentei o padding para deixar o texto mais afastado das bordas */
+    box-sizing: border-box;
+    /* Garantir que o padding seja incluído na largura total */
+    min-height: 150px;
+    /* Altura mínima para garantir que o bloco tenha uma altura visualmente agradável */
+    margin-top: -18%;
+    letter-spacing: -1px;
+    /* Reduz o espaçamento entre as letras */
+    font-size: 17px;
+}
+
+.textinho {
+    background-color: #FEF9F3;
+    width: 60%;
+    /* Ajustado para garantir que o bloco tenha uma largura mais flexível */
+    max-width: 800px;
+    /* Define uma largura máxima para evitar que o bloco fique muito largo em telas grandes */
+    border-radius: 40px;
+    margin: 20px auto;
+    /* Centraliza o bloco horizontalmente e adiciona um pequeno espaço superior */
+    position: relative;
+    padding: 60px;
+    /* Aumentei o padding para deixar o texto mais afastado das bordas */
+    box-sizing: border-box;
+    /* Garantir que o padding seja incluído na largura total */
+    min-height: 150px;
+    /* Altura mínima para garantir que o bloco tenha uma altura visualmente agradável */
+    margin-top: 3%;
+    letter-spacing: -1px;
+    /* Reduz o espaçamento entre as letras */
+    font-size: 17px;
+}
+
+/* Começo da responsividade da página de sobre */
+
+@media screen and (max-width: 320px) {
+
+    .textao,
+    .textinho {
+        width: 100%;
+        justify-content: center;
+        margin-top: -30%;
+        padding-top: 30px;
+    }
+
+    .textao h4 {
+        font-size: 14px;
+        margin-left: -20%;
+        margin-top: 0;
+        white-space: nowrap;
+    }
+    .textinho h4 {
+        margin-top: 20%;
+        font-size: 14px;
+        margin-left: -20%;
+        white-space: nowrap;
+    }
+
+    .textao p,
+    .textinho p {
+        font-size: 13px;
+        margin-top: 20px;
+        margin-left: 6%;
+    }
+
+
+    .carousel-item img {
+        width: 100% !important;
+        height: 40% !important;
+    }
+
+    .navbar-brand {
+        margin-top: -15%;
+        margin-left: -7%;
+    }
+
+    .navbar-toggler {
+        margin-top: -6% !important;
+    }
+
+    .nav-link {
+        color: #000000 !important; /* Cor do link */
+        font-size: 14px !important; /* Tamanho da fonte */
+        margin-top: 6%; /* Margem superior */
+        text-decoration: none; /* Remove o sublinhado do link */
+    }
+    
+    /* Estilo para os itens da navegação */
+    .nav-item {
+        display: flex;
+        justify-content: center; /* Centraliza os itens horizontalmente */
+    }
+    
+    /* Estilo para a barra de pesquisa */
+    .input-group {
+        margin-top: 16%; /* Ajuste da margem superior */
+        margin-left: -120% !important; /* Centraliza horizontalmente */
+        width: 190% !important; /* Ajusta a largura da barra de pesquisa */
+    }
+    
+    /* Estilo para os links dentro de .nav-item */
+    .nav-item a {
+        font-size: 20px; /* Tamanho da fonte */
+        color: black !important; /* Cor do texto do link */
+        text-decoration: none; /* Remove o sublinhado */
+    }
+    
+    /* Estilo para o número do WhatsApp */
+    .whatsapp-link {
+        color: #000000 !important;
+        margin-left: 37%;
+        font-size: 14px;
+        margin-top: -11% !important;
+        padding: 1px !important;
+    }
+    
+    .fab.fa-whatsapp {
+        margin-left: -310% !important;
+        font-size: 20px; /* Tamanho do ícone */
+        color: #25D366;  /* Cor padrão do ícone do WhatsApp */
+        transition: color 0.3s ease, transform 0.3s ease; /* Transições suaves */
+    }
+    
+    .navbar-collapse {
+        background-color: rgb(245, 243, 233);
+        border-radius: 30px;
+    }
+    
+    footer .col-md-3 {
+        width: 100%; /* Garante 100% da largura em dispositivos menores */
+        margin-bottom: 20px;
+    }
+     .list-unstyled {
+        margin-left: -23%;
+    }
+
+    .links-uteis-title {
+        margin-left: 2% !important;
+    }
+
+    footer h5 {
+        font-size: 16px; /* Ajuste de tamanho de título */
+        margin-bottom: 15px; /* Ajuste de espaçamento */
+    }
+
+    footer .col-md-3 p,
+    footer .col-md-3 a {
+        font-size: 14px; /* Tamanho de fonte para texto e links em telas menores */
+    }
+
+    footer .fab {
+        font-size: 20px; /* Reduz o tamanho do ícone do WhatsApp */
+    }
+
+    footer .col-md-3 img {
+        width: 45px; /* Ajuste o tamanho das imagens */
+    }
+    footer .text-center p {
+        font-size: 14px;
+    }
+}
+
+/* Fim da responsividade da página de sobre */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fim da responsividade da página de sobre */

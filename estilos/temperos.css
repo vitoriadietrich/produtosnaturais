@@ -1,0 +1,172 @@
+/* Container que envolve todas as imagens */
+.blocos {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Container que agrupa as linhas */
+  .container {
+    width: 100%;
+    max-width: 1200px; /* Defina uma largura máxima, se necessário */
+    padding: 0 20px;
+  }
+  
+  /* As linhas de imagens */
+  .linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Espaçamento entre as linhas */
+  }
+  
+  /* Estilo de cada bloco (imagem + nome) */
+  .bloco {
+    flex: 1;
+    margin-right: 20px; /* Espaçamento entre as imagens */
+    text-align: center; /* Centraliza o nome abaixo das imagens */
+  }
+  
+  .bloco img {
+    width: 100%; /* As imagens ocupam toda a largura disponível do bloco */
+    max-width: 300px; /* Ajuste o tamanho máximo das imagens */
+    height: auto;
+    border-radius: 8px; /* Deixe as bordas arredondadas nas imagens */
+  }
+
+  /* Estilos do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.5s;
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+  }
+  
+  #caption {
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    max-width: 80%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .preco1, .preco2, .preco3, .preco4, .preco5, .preco6, .preco7, .preco8, .preco9, .preco10,
+  .preco11, .preco12, .preco13, .preco14, .preco15, .preco16, .preco17, .preco18, .preco19, .preco20,
+  .preco21, .preco22, .preco23, .preco24, .preco25, .preco26, .preco27, .preco28, .preco29, .preco30,
+  .preco31, .preco32, .preco33, .preco34, .preco35, .preco36, .preco37, .preco38, .preco39, .preco40, 
+  .preco41, .preco42, .preco43, .preco44, .preco45, .preco46, .preco47, .preco48 {
+  margin-left: -70%;
+  margin-top: 20%;
+}
+
+  .btn-clique-aqui {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0F8C0F; /* Cor do botão */
+    color: white; /* Cor do texto */
+    font-size: 13px;
+    font-weight: bold;
+    width: 44%;
+    margin-left: 70%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease;
+}
+
+.btn-clique-aqui:hover {
+    background-color: #ffffff; /* Cor ao passar o mouse */
+    color: #0F8C0F;
+}
+
+/* Estilo para os botões */
+.botoes {
+    display: flex;
+    justify-content: space-between; /* Alinha os botões lado a lado */
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px; /* Ajusta o espaçamento entre os botões e o preço */
+  }
+  .btn-clique-aqui {
+    padding: 5px 15px;
+    background-color: #1D8815;
+    text-decoration: none;
+    color: #ffffff;
+    margin-left: 1%;
+    border-radius: 5px;
+    border: 1px solid #1D8815;
+    font-size: 14px;
+    text-align: center;
+  }
+  .btn-clique-aqui:hover {
+    background-color: #ffffff;
+  }
+
+  .modal {
+    display: none; /* Esconde o modal por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    margin-top: 4%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
